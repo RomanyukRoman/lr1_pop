@@ -1,17 +1,17 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-D:\pop\lr1_pop.gpr
-20240222063338 c37cc96dfc37d3b6d8c122c6f21abe5b
+D:\lr1_pop\ada\lr1_pop.gpr
+20240222063338 0b09e8a9c925f7412bb889dbb924f081
 [BOUND OBJECT FILES]
-D:\pop\obj\main.o
+D:\lr1_pop\ada\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LD:\pop\obj\
--LD:\pop\obj\
+-LD:\lr1_pop\ada\obj\
+-LD:\lr1_pop\ada\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc

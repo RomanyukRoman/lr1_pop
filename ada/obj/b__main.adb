@@ -173,14 +173,14 @@ package body ada_main is
            False),
          Value => (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
          Violated =>
-          (False, False, False, False, True, True, False, False, 
+          (False, False, False, False, True, True, True, False, 
            False, False, False, True, True, True, True, False, 
            False, False, False, True, False, False, True, True, 
            False, True, True, False, True, True, True, True, 
            False, False, False, False, False, True, False, False, 
            True, False, False, False, False, True, False, True, 
-           False, True, False, False, False, True, False, False, 
-           False, False, False, True, False, False, True, False, 
+           False, True, False, False, True, True, False, False, 
+           True, False, False, True, False, False, True, False, 
            True, True, True, False, False, True, False, True, 
            True, True, False, True, True, False, True, True, 
            True, True, False, False, False, False, False, False, 
@@ -318,9 +318,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\pop\obj\main.o
-   --   -LD:\pop\obj\
-   --   -LD:\pop\obj\
+   --   D:\lr1_pop\ada\obj\main.o
+   --   -LD:\lr1_pop\ada\obj\
+   --   -LD:\lr1_pop\ada\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnarl
