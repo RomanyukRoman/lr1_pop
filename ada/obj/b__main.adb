@@ -38,11 +38,11 @@ package body ada_main is
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__calendar__delays_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "ada__real_time_E");
    E143 : Short_Integer; pragma Import (Ada, E143, "ada__text_io_E");
-   E174 : Short_Integer; pragma Import (Ada, E174, "system__tasking__initialization_E");
+   E176 : Short_Integer; pragma Import (Ada, E176, "system__tasking__initialization_E");
    E184 : Short_Integer; pragma Import (Ada, E184, "system__tasking__protected_objects_E");
    E186 : Short_Integer; pragma Import (Ada, E186, "system__tasking__protected_objects__entries_E");
-   E182 : Short_Integer; pragma Import (Ada, E182, "system__tasking__queuing_E");
-   E170 : Short_Integer; pragma Import (Ada, E170, "system__tasking__stages_E");
+   E190 : Short_Integer; pragma Import (Ada, E190, "system__tasking__queuing_E");
+   E194 : Short_Integer; pragma Import (Ada, E194, "system__tasking__stages_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -173,20 +173,20 @@ package body ada_main is
            False),
          Value => (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
          Violated =>
-          (False, False, False, False, True, True, True, False, 
+          (False, False, False, False, True, True, False, False, 
            False, False, False, True, True, True, True, False, 
            False, False, False, True, False, False, True, True, 
            False, True, True, False, True, True, True, True, 
            False, False, False, False, False, True, False, False, 
            True, False, False, False, False, True, False, True, 
-           False, True, False, False, True, True, False, False, 
-           True, False, False, True, False, False, True, False, 
+           False, True, False, False, False, True, False, False, 
+           False, False, False, True, False, False, True, False, 
            True, True, True, False, False, True, False, True, 
            True, True, False, True, True, False, True, True, 
            True, True, False, False, False, False, False, False, 
-           False, False, False, False, False, True, False, False, 
+           False, False, False, False, True, True, False, False, 
            False),
-         Count => (0, 0, 0, 0, 0, 0, 1, 0, 0, 0),
+         Count => (0, 0, 0, 0, 0, 1, 1, 0, 0, 0),
          Unknown => (False, False, False, False, False, False, True, False, False, False));
       Priority_Specific_Dispatching :=
         Local_Priority_Specific_Dispatching'Address;
@@ -272,15 +272,15 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E143 := E143 + 1;
       System.Tasking.Initialization'Elab_Body;
-      E174 := E174 + 1;
+      E176 := E176 + 1;
       System.Tasking.Protected_Objects'Elab_Body;
       E184 := E184 + 1;
       System.Tasking.Protected_Objects.Entries'Elab_Spec;
       E186 := E186 + 1;
       System.Tasking.Queuing'Elab_Body;
-      E182 := E182 + 1;
+      E190 := E190 + 1;
       System.Tasking.Stages'Elab_Body;
-      E170 := E170 + 1;
+      E194 := E194 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
